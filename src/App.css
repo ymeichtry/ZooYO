@@ -125,3 +125,27 @@ body {
     transform: rotate(45deg) translate(-5px, -6px);
   }
 }
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Optional: Fügen Sie Padding hinzu, um den Abstand zwischen den Buttons zu steuern */
+}
+
+button {
+  background-color: rgba(128, 128, 128, 0.5); /* Grauer Hintergrund mit Transparenz */
+  color: white;
+  padding: 10px 15px;
+  margin-bottom: 10px; /* Optional: Fügen Sie unteren Abstand zwischen den Buttons hinzu */
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  width: 100px;
+}
+
+button:last-child {
+  margin-bottom: 0; /* Entfernt den unteren Abstand für den letzten Button */
+}
+
