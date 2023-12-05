@@ -4,11 +4,11 @@
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #f9f9f9;
   }
   
   .payment-form h2 {
-    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
   }
   
   .payment-form label {
@@ -16,11 +16,34 @@
     margin-bottom: 10px;
   }
   
-  .payment-form input {
+  .payment-form input,
+  .payment-form select {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
+    margin-bottom: 10px;
     box-sizing: border-box;
   }
   
+  .payment-form p {
+    color: red;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .payment-form .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .payment-form button {
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .payment-form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
   
