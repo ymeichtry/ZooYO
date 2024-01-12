@@ -2,13 +2,22 @@
 import React, { useState } from "react";
 import { BrowserRouter, Routes, Route, Link, Switch, Router } from "react-router-dom"; // Füge die notwendigen Imports hinzu
 import "./home.css";
-
-const Home = () => {
+  
+const EventBox = ({ eventName, buttonText }) => {
     return (
-      <div>
+      <div className="event-box">
+        <h3>{eventName}</h3>
+        <button>{buttonText}</button>
+      </div>
+    );
+  };
+  
+  const Home = () => {
+    return (
+      <div className="home-container">
         <h1>Willkommen im Zoo!</h1>
   
-        <div>
+        <div className="section">
           <h2>Öffnungszeiten:</h2>
           <p>
             Montag-Freitag: 09:00-18:00
@@ -17,27 +26,38 @@ const Home = () => {
           </p>
         </div>
   
-        <div>
+        <div className="section">
           <h2>Preise:</h2>
-          <p>
-            Kinder: 10.-
-            <br />
-            Erwachsene: 14.-
-            <br />
-            Senioren: 10.-
-            <br />
-            Jugendliche: 12.-
-          </p>
+          <div className="price-box">
+            <p>Kinder: 10.-</p>
+            <button>Kaufen</button>
+          </div>
+          <div className="price-box">
+            <p>Erwachsene: 14.-</p>
+            <button>Kaufen</button>
+          </div>
+          <div className="price-box">
+            <p>Senioren: 10.-</p>
+            <button>Kaufen</button>
+          </div>
+          <div className="price-box">
+            <p>Jugendliche: 12.-</p>
+            <button>Kaufen</button>
+          </div>
         </div>
   
-        <div>
+        <div className="section">
           <h2>Events:</h2>
-          <ul>
-            <li>Zoo-Besuch mit Jugendlichen</li>
-            <li>Bastel-Workshop</li>
-            <li>Tiere füttern mit Senioren</li>
-            <li>Meditieren mit den Tieren</li>
-          </ul>
+          <div className="event-container">
+            <div className="event-row">
+              <EventBox eventName="Zoo-Besuch mit Jugendlichen" buttonText="Buchen" />
+              <EventBox eventName="Bastel-Workshop" buttonText="Buchen" />
+            </div>
+            <div className="event-row">
+              <EventBox eventName="Tiere füttern mit Senioren" buttonText="Buchen" />
+              <EventBox eventName="Meditieren mit den Tieren" buttonText="Buchen" />
+            </div>
+          </div>
         </div>
       </div>
     );
