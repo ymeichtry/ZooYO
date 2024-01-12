@@ -7,6 +7,10 @@ import Footer from "./footer/footer";
 import Home from "./Home/home";
 import PayFormular from "./PayFormular/payFormular";
 import PayInformations from "./PayFormular/PayInformations/payInformations";
+import Event01 from "./Event01/Event01"; // Importieren Sie die Event-Seite
+import Event02 from "./Event02/Event02";
+import Event03 from "./Event03/Event03";
+import Event04 from "./Event04/Event04";
 
 function App() {
   const [isToggled, setToggled] = useState(false);
@@ -36,6 +40,10 @@ function App() {
           path="/PayInformations"
           element={<PayInformations />}
         />     
+        <Route path="/Event01" element={<Event01 />} />
+        <Route path="/Event02" element={<Event02 />} />
+        <Route path="/Event03" element={<Event03 />} />
+        <Route path="/Event04" element={<Event04 />} />
         </Routes>
       <Footer />
     </BrowserRouter>

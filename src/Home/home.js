@@ -1,13 +1,19 @@
 // Home.js
 import React, { useState } from "react";
-import { BrowserRouter, Routes, Route, Link, Switch, Router } from "react-router-dom"; // Füge die notwendigen Imports hinzu
+import { Link, useNavigate, BrowserRouter, Routes, Route, Switch, Router } from "react-router-dom";
 import "./home.css";
   
-const EventBox = ({ eventName, buttonText }) => {
+const EventBox = ({ eventName, buttonText, eventPath }) => {
+    const navigate = useNavigate();
+  
+    const handleButtonClick = () => {
+      navigate(eventPath);
+    };
+  
     return (
       <div className="event-box">
         <h3>{eventName}</h3>
-        <button>{buttonText}</button>
+        <button onClick={handleButtonClick}>{buttonText}</button>
       </div>
     );
   };
@@ -49,15 +55,15 @@ const EventBox = ({ eventName, buttonText }) => {
         <div className="section">
           <h2>Events:</h2>
           <div className="event-container">
-            <div className="event-row">
-              <EventBox eventName="Zoo-Besuch mit Jugendlichen" buttonText="Buchen" />
-              <EventBox eventName="Bastel-Workshop" buttonText="Buchen" />
-            </div>
-            <div className="event-row">
-              <EventBox eventName="Tiere füttern mit Senioren" buttonText="Buchen" />
-              <EventBox eventName="Meditieren mit den Tieren" buttonText="Buchen" />
-            </div>
-          </div>
+        <div className="event-row">
+          <EventBox eventName="Zoo-Besuch mit Jugendlichen" buttonText="Buchen" eventPath="/Event01" />
+          <EventBox eventName="Bastel-Workshop" buttonText="Buchen" eventPath="/Event02" />
+        </div>
+        <div className="event-row">
+          <EventBox eventName="Tiere füttern mit Senioren" buttonText="Buchen" eventPath="/Event03" />
+          <EventBox eventName="Meditieren mit den Tieren" buttonText="Buchen" eventPath="/Event04" />
+        </div>
+      </div>
         </div>
       </div>
     );
