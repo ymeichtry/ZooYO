@@ -1,0 +1,21 @@
+/* Event04.css */
+.booking-day {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .booking-time-box {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .booking-time-box p {
+    margin: 0;
+  }
+  
+  .booking-time-box button {
+    margin-top: 5px;
+  }
+  
