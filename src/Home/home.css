@@ -24,6 +24,12 @@
   padding: 10px;
   margin: 10px 0;
 }
+.group-price-box {
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+  margin: 10px 0;
+}
 
 .event-container {
   display: flex;

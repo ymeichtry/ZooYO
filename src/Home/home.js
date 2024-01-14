@@ -33,7 +33,7 @@ const EventBox = ({ eventName, buttonText, eventPath }) => {
         </div>
   
         <div className="section">
-          <h2>Preise:</h2>
+          <h2>Einzelticket:</h2>
           <div className="price-box">
             <p>Kinder: 10.-</p>
             <button>Kaufen</button>
@@ -46,11 +46,24 @@ const EventBox = ({ eventName, buttonText, eventPath }) => {
             <p>Senioren: 10.-</p>
             <button>Kaufen</button>
           </div>
+        </div>
+
+        <div className="section">
+          <h2>Gruppenticket:</h2>
           <div className="price-box">
-            <p>Jugendliche: 12.-</p>
+            <p>Kinder: 10.-</p>
+          </div>
+          <div className="price-box">
+            <p>Erwachsene: 14.-</p>
+          </div>
+          <div className="price-box">
+            <p>Senioren: 10.-</p>
+          </div>
+          <div className="group-price-box">
             <button>Kaufen</button>
           </div>
         </div>
+
   
         <div className="section">
           <h2>Events:</h2>
