@@ -7,10 +7,10 @@ import Footer from "./footer/footer";
 import Home from "./Home/home";
 import PayFormular from "./PayFormular/payFormular";
 import PayInformations from "./PayFormular/PayInformations/payInformations";
-import Event01 from "./Event01/Event01"; // Importieren Sie die Event-Seite
-import Event02 from "./Event02/Event02";
-import Event03 from "./Event03/Event03";
-import Event04 from "./Event04/Event04";
+import Event01 from "./Events/Event01/Event01"; // Importieren Sie die Event-Seite
+import Event02 from "./Events/Event02/Event02";
+import Event03 from "./Events/Event03/Event03";
+import Event04 from "./Events/Event04/Event04";
 import SingleTicket from "./SingleTicket/singleTicket";
 import GroupTicket from "./GroupTicket/groupTicket";
 
@@ -34,14 +34,8 @@ function App() {
         <Route path="/events" element={<div>Events Page Content</div>} />
         <Route path="/kaufen" element={<div>Kaufen Page Content</div>} />
         <Route path="/" element={<Home />} />
-        <Route
-          path="/payFormular"
-          element={<PayFormular onBuy={handleBuy} />}
-        />
-        <Route
-          path="/PayInformations"
-          element={<PayInformations />}
-        />     
+        <Route path="/payFormular" element={<PayFormular onBuy={handleBuy} />}/>
+        <Route path="/PayInformations" element={<PayInformations />}/>     
         <Route path="/Event01" element={<Event01 />} />
         <Route path="/Event02" element={<Event02 />} />
         <Route path="/Event03" element={<Event03 />} />
