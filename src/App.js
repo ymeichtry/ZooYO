@@ -12,6 +12,7 @@ import Event02 from "./Event02/Event02";
 import Event03 from "./Event03/Event03";
 import Event04 from "./Event04/Event04";
 import SingleTicket from "./SingleTicket/singleTicket";
+import GroupTicket from "./GroupTicket/groupTicket";
 
 function App() {
   const [isToggled, setToggled] = useState(false);
@@ -46,6 +47,7 @@ function App() {
         <Route path="/Event03" element={<Event03 />} />
         <Route path="/Event04" element={<Event04 />} />
         <Route path="/SingleTicket" element={<SingleTicket />} />
+        <Route path="/GroupTicket" element={<GroupTicket />} />
         </Routes>
       <Footer />
     </BrowserRouter>
