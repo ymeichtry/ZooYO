@@ -1,0 +1,112 @@
+.payment-form {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.payment-form h2 {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.payment-form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.payment-form label div {
+  display: flex;
+  flex-direction: row;
+}
+
+.payment-form label select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.payment-form label select + select {
+  margin-left: 5px;
+}
+
+.payment-form p {
+  color: red;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.payment-form .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-form button {
+  padding: 10px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.payment-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.ablaufdatum-cvv {
+  display: flex;
+  flex-direction: row;
+}
+
+.input{
+  height: 35px;
+}
+
+.cvv {
+  margin-left: 10%;
+}
+
+.bank-sincewhenbank {
+  display: flex;
+  flex-direction: row;
+}
+
+.bank{
+  width: 40%;
+}
+
+.bank-input {
+  height: 35px;
+}
+
+.sincewhenbank {
+  margin-left: 10%;
+}
+
+.ablaufdatum {
+  width: 40%;
+}
+
+.zip-city {
+  display: flex;
+  flex-direction: row;
+}
+
+.zip-city label {
+  width: 25%;
+}
+
+.zip-city label + label {
+  margin-left: 5px;
+}
+
+.city-input {
+  height: 35px;
+  width: 288%;
+}
+
+.buttons button {
+  background-color: #333;
+}
