@@ -2,17 +2,19 @@
 import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
+
 import Header from "./header/header";
 import Footer from "./footer/footer";
 import Home from "./Home/home";
 import PayFormular from "./PayFormular/payFormular";
 import PayInformations from "./PayFormular/PayInformations/payInformations";
-import Event01 from "./Events/Event01/Event01"; // Importieren Sie die Event-Seite
+import Event01 from "./Events/Event01/Event01";
 import Event02 from "./Events/Event02/Event02";
 import Event03 from "./Events/Event03/Event03";
 import Event04 from "./Events/Event04/Event04";
 import SingleTicket from "./SingleTicket/singleTicket";
 import GroupTicket from "./GroupTicket/groupTicket";
+import TicketConfirm from "./TicketConfirm/ticketConfirm";
 
 function App() {
   const [isToggled, setToggled] = useState(false);
@@ -42,6 +44,7 @@ function App() {
         <Route path="/Event04" element={<Event04 />} />
         <Route path="/SingleTicket" element={<SingleTicket />} />
         <Route path="/GroupTicket" element={<GroupTicket />} />
+        <Route path="/TicketConfirm" element={<TicketConfirm />} />
         </Routes>
       <Footer />
     </BrowserRouter>

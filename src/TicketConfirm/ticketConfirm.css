@@ -1,0 +1,17 @@
+/* ticketConfirm.css */
+  
+  .image-container {
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: column-reverse;
+    width: 100%; 
+    height: auto;
+  }
+  
+  .image-container img {
+    height: auto;
+    width: 100%;
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+  }
+  
