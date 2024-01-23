@@ -13,7 +13,7 @@ const BookingTimeBox = ({ time }) => {
 
 const Event04 = () => {
   return (
-    <div>
+    <div class="Event04">
       <h1>Meditieren mit den Tieren</h1>
       
       <div className="booking-day">
