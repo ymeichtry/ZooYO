@@ -7,6 +7,12 @@
   align-items: center;
 }
 
+.homeIcon {
+  height: 30px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
 .burger-icon {
   cursor: pointer;
 }
@@ -21,46 +27,3 @@
 .menu-list li {
   margin-right: 15px;
 }
-
-@media (max-width: 768px) {
-    .burger-menu {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .burger-icon {
-      order: 2;
-    }
-  
-    .menu-list {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-    }
-  
-    .menu-list li {
-      text-align: center;
-    }
-  
-    .content {
-      padding-top: 60px;
-    }
-  
-    .burger-menu.show-menu .menu-list {
-      display: flex;
-    }
-  
-    .bar:nth-child(1) {
-      transform: rotate(-45deg) translate(-5px, 6px);
-    }
-  
-    .bar:nth-child(2) {
-      opacity: 0;
-    }
-  
-    .bar:nth-child(3) {
-      transform: rotate(45deg) translate(-5px, -6px);
-    }
-  }
-  
