@@ -13,15 +13,6 @@ function Header({ toggleMenu, isToggled }) {
             <img src={homeIcon} alt="homeIcon" className="homeIcon" />
           </Link>
         </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/services">Services</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
       </ul>
     </header>
   );
