@@ -1,12 +1,13 @@
 // Event02.js
 import React from "react";
 import "./Event02.css"; // Stellen Sie sicher, dass Sie die richtige CSS-Datei importieren
+import { Link, useNavigate, BrowserRouter, Routes, Route, Switch, Router } from "react-router-dom";
 
 const BookingTimeBox = ({ time }) => {
   return (
     <div className="booking-time-box">
       <p>{time}</p>
-      <button>Buchen</button>
+      <Link to="/PayFormular">Buchen</Link>
     </div>
   );
 };
