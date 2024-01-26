@@ -17,9 +17,6 @@ Wir freuen uns über Beiträge! Einfach den Code herunterladen, anpassen und ein
 - @DeinUsername 🚀
 - @OliverDev 🐧
  
-## Lizenz
-Dieses Projekt ist unter der [MIT-Lizenz](Link zur Lizenz) lizenziert.
- 
 **Hast du Fragen oder Anregungen?** Wir hören gerne von dir! 📬🐨
 
 # Getting Started with Create React App
