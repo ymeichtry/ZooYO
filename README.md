@@ -1,3 +1,27 @@
+# ZooYO - Die ultimative Zoo App! 🦁🐘🐒
+ 
+Willkommen bei ZooYO, der App, die dir die faszinierende Welt der Tiere näher bringt! 🌍🐾
+ 
+## Über ZooYO
+ZooYO bietet eine interaktive Plattform, um Zoobesuche zu planen, Tiere zu entdecken und spannende Aktivitäten im Zoo zu erleben. 🚀🦓
+ 
+## Funktionen
+- **Tierentdeckung:** Finde Informationen zu einer Vielzahl von Tieren.
+- **Veranstaltungen:** Erhalte Infos zu Zoo-Veranstaltungen und Aktivitäten.
+- **Tickets:** Kaufe Tickets direkt über die App.
+ 
+## Mitwirken
+Wir freuen uns über Beiträge! Einfach den Code herunterladen, anpassen und ein Teil des ZooYO-Projekts werden. 🐍🦒
+ 
+## Mitwirkende
+- @DeinUsername 🚀
+- @OliverDev 🐧
+ 
+## Lizenz
+Dieses Projekt ist unter der [MIT-Lizenz](Link zur Lizenz) lizenziert.
+ 
+**Hast du Fragen oder Anregungen?** Wir hören gerne von dir! 📬🐨
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,4 +92,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# ZooYO
