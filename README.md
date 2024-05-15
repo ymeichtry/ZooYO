@@ -14,8 +14,8 @@ ZooYO bietet eine interaktive Plattform, um Zoobesuche zu planen, Tiere zu entde
 Wir freuen uns über Beiträge! Einfach den Code herunterladen, anpassen und ein Teil des ZooYO-Projekts werden. 🐍🦒
  
 ## Mitwirkende
-- @DeinUsername 🚀
-- @OliverDev 🐧
+- @ymeichtry 🚀
+- @olisebz 🐧
  
 **Hast du Fragen oder Anregungen?** Wir hören gerne von dir! 📬🐨
 
