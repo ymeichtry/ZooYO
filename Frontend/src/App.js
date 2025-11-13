@@ -37,14 +37,14 @@ function App() {
         <Route path="/kaufen" element={<div>Kaufen Page Content</div>} />
         <Route path="/" element={<Home />} />
         <Route path="/payFormular" element={<PayFormular onBuy={handleBuy} />}/>
-        <Route path="/PayInformations" element={<PayInformations />}/>     
+        <Route path="/payInformations" element={<PayInformations />}/>     
         <Route path="/Event01" element={<Event01 />} />
         <Route path="/Event02" element={<Event02 />} />
         <Route path="/Event03" element={<Event03 />} />
         <Route path="/Event04" element={<Event04 />} />
-        <Route path="/SingleTicket" element={<SingleTicket />} />
-        <Route path="/GroupTicket" element={<GroupTicket />} />
-        <Route path="/TicketConfirm" element={<TicketConfirm />} />
+        <Route path="/singleTicket" element={<SingleTicket />} />
+        <Route path="/groupTicket" element={<GroupTicket />} />
+        <Route path="/ticketConfirm" element={<TicketConfirm />} />
         </Routes>
       <Footer />
     </BrowserRouter>

@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./payFormular.css";
-import "./PayInformations/payInformations"
 
-function PayFormular() {
+function PayFormular({ onBuy }) {
   const navigate = useNavigate();
-  const [collectedInformation, setCollectedInformation] = useState([]);
   const [paymentType] = useState("lastschrift");
   const [cardNumber, setCardNumber] = useState("");
   const [expiryMonth, setExpiryMonth] = useState("01");
@@ -19,8 +17,7 @@ function PayFormular() {
   const [city, setCity] = useState("");
 
   const handleBuy = () => {
-    // Collect the information and call the onBuy prop
-    const collectedInformation = {
+    const info = {
       paymentType,
       cardNumber,
       expiryMonth,
@@ -32,15 +29,14 @@ function PayFormular() {
       zipCode,
       city,
     };
-    onBuy(collectedInformation);
 
-    // Navigate to the "/payInformations" page
+    if (typeof onBuy === "function") {
+      onBuy(info);
+    } else {
+      console.log("Collected information:", info);
+    }
+
     navigate("/payInformations");
-  };
-
-  const onBuy = (collectedInformation) => {
-    // Your logic for handling the purchase
-    console.log("Buy clicked. Collected Information:", collectedInformation);
   };
 
   const handleCancel = () => {
@@ -88,9 +84,8 @@ function PayFormular() {
     return value.trim() !== "";
   };
   const validateZipCode = (value) => {
-    // Hier könnte eine individuelle Validierung für die Postleitzahl erfolgen, falls benötigt
-    const numericValue = value.trim().replace(/[^\d]/g, ''); // Entfernt alle nicht-numerischen Zeichen
-    return /^\d+$/.test(numericValue) ? numericValue : '';
+    const numericValue = value.trim().replace(/[^\d]/g, "");
+    return numericValue.length > 0 && /^\d+$/.test(numericValue);
   };
   const validateCity = (value) => {
     // Hier könnte eine individuelle Validierung für den Ort erfolgen, falls benötigt
