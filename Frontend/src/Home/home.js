@@ -1,6 +1,6 @@
 // Home.js
-import React, { useState } from "react";
-import { Link, useNavigate, BrowserRouter, Routes, Route, Switch, Router } from "react-router-dom";
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./home.css";
   
 const EventBox = ({ eventName, buttonText, eventPath }) => {
