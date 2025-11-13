@@ -25,3 +25,6 @@ yarn-error.log*
 ## Intellij IDEA ##
 .idea
 *.xml
+
+## Frontend ##
+/Frontend/node_modules
